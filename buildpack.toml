@@ -1,0 +1,11 @@
+[buildpack]
+name = "Dotnet"
+
+[publish.Ignore]
+files = [
+    ".gitignore",
+    ".github/",
+    "src/",
+    "test/",
+    "tests/"
+]

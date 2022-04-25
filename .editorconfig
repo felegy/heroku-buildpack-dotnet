@@ -1,0 +1,87 @@
+# editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Default settings:
+# A newline ending every file
+# Use 4 spaces as indentation
+[*]
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+
+# Xml project files
+[*.{csproj,vcxproj,vcxproj.filters,proj,nativeproj,locproj}]
+indent_size = 2
+
+# Xml files
+[*.{xml,stylecop,resx,ruleset}]
+indent_size = 2
+
+# Xml config files
+[*.{props,targets,config,nuspec}]
+indent_size = 2
+
+# Shell scripts
+[*.sh]
+end_of_line = lf
+[*.{cmd,bat,ps1}]
+end_of_line = crlf
+
+
+# HVG Rule set
+# Description:
+
+
+# CA1014: Mark assemblies with CLSCompliant
+dotnet_diagnostic.CA1014.severity = none
+
+# Code files
+[*.{cs,vb}]
+
+dotnet_diagnostic.CA1724.severity = warning
+
+dotnet_diagnostic.SA0001.severity = none
+
+dotnet_diagnostic.SA1101.severity = none
+
+dotnet_diagnostic.SA1309.severity = none
+
+dotnet_diagnostic.SA1413.severity = none
+
+dotnet_diagnostic.SA1614.severity = none
+
+dotnet_diagnostic.SA1616.severity = none
+
+dotnet_diagnostic.SA1623.severity = none
+
+dotnet_diagnostic.SA1629.severity = none
+
+dotnet_diagnostic.SA1633.severity = none
+
+dotnet_diagnostic.SA1627.severity = none
+
+dotnet_diagnostic.SA1309.severity = none
+
+# S1075: URIs should not be hardcoded
+dotnet_diagnostic.S1075.severity = warning
+
+dotnet_diagnostic.CA1707.severity = none
+
+# CA1309: Use ordinal string comparison
+dotnet_diagnostic.CA1309.severity = none
+
+# CA1508: Avoid dead conditional code
+dotnet_diagnostic.CA1508.severity = none
+
+# CA1014: Mark assemblies with CLSCompliant
+dotnet_diagnostic.CA1014.severity = none
+
+# CA1848 Improve logging performance
+dotnet_diagnostic.CA1848.severity = none
+
+# CA2254 logger string format
+dotnet_diagnostic.CA2254.severity = none
